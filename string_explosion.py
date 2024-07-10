@@ -1,6 +1,6 @@
 text = input()
-output = ""
-for ch in text:
-    if ch.isdigit():
-        strength = int(ch)
-        output += slice(text[0], ch)
+output = text
+for i in range(0, len(text)):
+    if text[i].isdigit():
+        strength = int(text[i])
+
